@@ -16,9 +16,9 @@ def remove_punctuation(text):
     return "".join(char for char in text if char not in string.punctuation)
 
 def translate_text(text, source_language, target_language):
-    t5_small_pipeline = pipeline(
+    t5_base_pipeline = pipeline(
     task="text2text-generation",
-    model="t5-large",
+    model="t5-base",
     max_length=1000,
     model_kwargs={"cache_dir": './Translate/t5_large' },
     )
