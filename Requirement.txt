@@ -1,0 +1,5 @@
+Rsacremoses==0.0.53
+datasets
+transformers
+transformers[sentencepiece]
+streamlit
